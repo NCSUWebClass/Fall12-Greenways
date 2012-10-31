@@ -1,4 +1,4 @@
-package wsGreenways;
+package wsGreenways.unittests;
 
 import junit.framework.TestCase;
 
