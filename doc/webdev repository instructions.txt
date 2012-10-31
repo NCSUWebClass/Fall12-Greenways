@@ -21,6 +21,8 @@
 5) Open Java EE Perspective. WSGreenways should be in the Project Explorer.
 	-Note: I copied this project from another project and left some temp files because GitHub doesn't like empty directories.
 	-The php files that were located in the repository are now in the "php" directory of the project.
+		-Eclipse doesn't seem to know what to do with PHP files (at least by default). You can open them by right-clicking -> Open With -> Text Editor
+		-After the first time, double-clicking should work (for that file).
 6) Install Tomcat server (this is not necessary to work on code, but it is necessary to run the project on your computer for testing purposes)
 	1) Go to http://tomcat.apache.org/download-70.cgi
 	2) Select appropriate package under 7.0.32 -> Binary Distributions -> Core.
