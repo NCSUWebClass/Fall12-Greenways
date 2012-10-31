@@ -1,0 +1,52 @@
+1) Install Eclipse EE (http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/junosr1)
+2) Install Subclipse
+	1) Open Eclipse
+	2) Help -> Install New Software
+	3) http://subclipse.tigris.org/update_1.8.x
+	4) Check Subclipse
+	5) Install (agree to license, etc.)
+	6) Restart Eclipse
+3) Setup repository location
+	1) Window -> Open Perspective -> Other -> SVN Repository Exploring
+	2) Under SVN Repositories at the top-left, Right-click -> New -> Repository Location
+	3) Enter https://github.com/NCSUWebClass/Fall12-Greenways.git
+	4) Finish
+4) Checkout repository
+	1) Open SVN Repository perspective.
+	2) Under SVN Repositories, open ...github...Fall12-Greenways.git
+	3) Right-click on trunk
+	4) Checkout
+	5) Finish
+	6) OK (if applicable).
+5) Open Java EE Perspective. WSGreenways should be in the Project Explorer.
+	-Note: I copied this project from another project and left some temp files because GitHub doesn't like empty directories.
+	-The php files that were located in the repository are now in the "php" directory of the project.
+6) Install Tomcat server (this is not necessary to work on code, but it is necessary to run the project on your computer for testing purposes)
+	1) Go to http://tomcat.apache.org/download-70.cgi
+	2) Select appropriate package under 7.0.32 -> Binary Distributions -> Core.
+	3) Extract somewhere. Probably somewhere like C:\Program Files\Tomcat.
+7) Setup Tomcat in Eclipse
+	1) Open the Java EE perspective
+	2) Open the Servers tab at the bottom.
+	3) Right-click -> New -> Server
+	4) Select Apacha -> Tomcat v7.0 Server
+	5) Next.
+	6) Browse to your Tomcat installation directory.
+	7) Finish.
+8) Add WSGreenways to Tomcat.
+	1) Right-click on your Tomcat server.
+	2) Add and remove.
+	3) Select the greenways project fromt he left.
+	4) Click Add>
+	5) Finish.
+
+Steps for modifying project:
+1) Make changes in the various source files.
+2) Right-click on WSGreenways (or any sub-file or directory) -> Team -> Synchronize with Repository.
+3) Iterate through changes, preserving, discarding, or copying as necessary.
+4) Right-click on WSGreenways (or applicable sub-file or directory) -> Team -> Commit
+5) Select relevant files and directories.
+6) Enter comment.
+7) OK.
+
+If you wish to discard all changes to a particular directory or file since the last checkout/commit, right-click -> Team -> Revert
