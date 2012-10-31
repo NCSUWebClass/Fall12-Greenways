@@ -23,7 +23,28 @@
 	-The php files that were located in the repository are now in the "php" directory of the project.
 		-Eclipse doesn't seem to know what to do with PHP files (at least by default). You can open them by right-clicking -> Open With -> Text Editor
 		-After the first time, double-clicking should work (for that file).
-6) Install Tomcat server (this is not necessary to work on code, but it is necessary to run the project on your computer for testing purposes)
+	-I've recreated the current WSGreenways mobile site in this project.
+		-You can open WebRoot/home.html in a browser
+			-Right Click -> Properties; copy the path in location into a browser's address bar
+		
+		
+At this point, you should have the project and be able to view a local version of the site.
+
+
+Steps for modifying project:
+1) Make changes in the various source files.
+2) Right-click on WSGreenways (or any sub-file or directory) -> Team -> Synchronize with Repository.
+3) Iterate through changes, preserving, discarding, or copying as necessary.
+4) Right-click on WSGreenways (or applicable sub-file or directory) -> Team -> Commit
+5) Select relevant files and directories.
+6) Enter comment.
+7) OK.
+
+If you wish to discard all changes to a particular directory or file since the last checkout/commit, right-click -> Team -> Revert
+		
+		
+Eventually, we'll probably implement actual code (way better than a lot of hard-coded HTML). When that happens, you'll need the following steps to run the application locally.			
+6) Install Tomcat server
 	1) Go to http://tomcat.apache.org/download-70.cgi
 	2) Select appropriate package under 7.0.32 -> Binary Distributions -> Core.
 	3) Extract somewhere. Probably somewhere like C:\Program Files\Tomcat.
@@ -41,14 +62,11 @@
 	3) Select the greenways project fromt he left.
 	4) Click Add>
 	5) Finish.
-
-Steps for modifying project:
-1) Make changes in the various source files.
-2) Right-click on WSGreenways (or any sub-file or directory) -> Team -> Synchronize with Repository.
-3) Iterate through changes, preserving, discarding, or copying as necessary.
-4) Right-click on WSGreenways (or applicable sub-file or directory) -> Team -> Commit
-5) Select relevant files and directories.
-6) Enter comment.
-7) OK.
-
-If you wish to discard all changes to a particular directory or file since the last checkout/commit, right-click -> Team -> Revert
+	
+To view the application locally:
+9) Start Tomcat.
+	1) Select Tomcat in the Servers tab.
+	2) Press the "Start the Server" icon in the top-right corner of the window with the Servers tab.
+		-Alternatively, type CTRL + ALT + R
+10) Open a browser.
+11) Go to http://localhost:8080/WSGreenways/
