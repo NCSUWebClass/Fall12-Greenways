@@ -1,4 +1,8 @@
+<%@page import="wsGreenways.Greenway"%>
+<%@page import="wsGreenways.GreenwayAttribute"%>
 <%@page import="wsGreenways.enums.GreenwayLocation"%>
+<%@page import="java.util.Iterator"%>
+<%@page import="java.util.LinkedList" %>
 
 <!DOCTYPE html>
 <html>
@@ -76,7 +80,7 @@
 							
 	for (GreenwayLocation gw : GreenwayLocation.values()) {
 		
-		greenways.add(gw);
+		greenways.add(new Greenway(gw));
 		
 	}
 
@@ -87,16 +91,16 @@
 %>
 
 					<li>
-						<%=gw.getName()%>
+						<%=gw.getLocation().getName()%>
 						<ul>
 							<li>
 								&nbsp;
 							</li>
 							<li>
-								<a href="<%=gw.getMapURL()%>"><%=gw.getName()%></a>
+								<a href="<%=gw.getLocation().getMapURL()%>"><%=gw.getLocation().getName()%></a>
 							</li>
 							<li>
-								<%=gw.getName()%> Info
+								<%=gw.getLocation().getName()%> Info
 								<ul class="trailInfo" >
 								
 <%
