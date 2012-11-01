@@ -30,7 +30,7 @@ public class ProductionConnectionDriver implements IConnectionDriver {
 		try {
 			if (initialContext == null)
 				initialContext = new InitialContext();
-			return ((DataSource) (((Context) initialContext.lookup("java:comp/env"))).lookup("jdbc/itrust"))
+			return ((DataSource) (((Context) initialContext.lookup("java:comp/env"))).lookup("jdbc/wsGreenways"))
 					.getConnection();
 		} catch (NamingException e) {
 			throw new SQLException(("Context Lookup Naming Exception: " + e.getMessage()));

@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.List;
 import wsGreenways.dao.DAOFactory;
 import wsGreenways.testutils.SQLFileCache;
+import wsGreenways.testutils.TestDAOFactory;
 
 /**
  * Drops and rebuilds the entire database. Also provides some utility methods. DO NOT PUT TEST DATA HERE!!!
@@ -22,7 +23,7 @@ public class DBBuilder {
 	private DAOFactory factory;
 
 	public DBBuilder() {
-		factory = DAOFactory.getProductionInstance();
+		factory = TestDAOFactory.getTestInstance();
 	}
 
 	public DBBuilder(DAOFactory factory) {
@@ -34,7 +35,7 @@ public class DBBuilder {
 	}
 
 	public static void rebuildAll() throws FileNotFoundException, IOException, SQLException {
-		DBBuilder dbBuilder = new DBBuilder(DAOFactory.getProductionInstance());
+		DBBuilder dbBuilder = new DBBuilder(TestDAOFactory.getTestInstance());
 		dbBuilder.dropTables();
 		dbBuilder.createTables();
 		System.out.println("Operation Completed");
