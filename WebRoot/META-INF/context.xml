@@ -16,7 +16,7 @@
 		-->
 <Resource
 	username="root" 
-	password="f3lsh3r"
+	password=""
 	url="jdbc:mysql://localhost:3306/wsGreenways?createDatabaseIfNotExist=true"		
 	name="jdbc/wsGreenways"
 	auth="Container"
