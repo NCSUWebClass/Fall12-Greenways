@@ -1,0 +1,81 @@
+	div.logo {
+	height: 68px;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.logo h1.logoName {
+	color: #FFF;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 25px;
+	padding: 0px;
+}
+h4 {
+	height: 50px;
+}
+.black {
+	font-size: small;
+	color: #CCC;
+}
+
+p {
+	display: block;
+	padding-top: 4px;
+}
+h2 {
+	color: #663300;
+	text-align: center;
+}
+ul.trailInfo {
+	list-style-position: inside;
+	list-style-type: disc;
+	font-size: medium;
+	font-weight: normal;
+}
+.contentBox h3 {
+	display: block;
+	font-size: large;
+	text-align: center;
+	color: #603813;
+	margin-bottom: 10px;
+}
+.trailInfo li .highlight {
+	color: #F00;
+}
+
+ul.navLinks a{
+	font-size: larger;
+	font-family: Arial, Helvetica, sans-serif;
+	font-variant: normal;
+}
+a.backLink {
+	margin-left: 10px;
+}
+p.title {
+	font-size: medium;
+	font-weight: bold;
+	color: #630;
+	display: block;
+	clear: both;
+}
+p.copy {
+	font-size: medium;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+}
+#home p {
+	font-size: medium;
+	margin-bottom: 5px;
+}

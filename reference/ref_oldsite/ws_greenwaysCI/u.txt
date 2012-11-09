@@ -1,0 +1,29 @@
+<?php echo form_open_multipart('upload_happening/input'); ?>
+           		<?php echo validation_errors('<p class="error">'); ?>
+ 
+             
+             <div class="galleryForm"> 
+                         <p><label for="image">Add image to the What's Happening page:</label>
+                            <?php echo form_upload('userfile'); ?></p>
+                         <p><label for="caption">Title:</label>
+                                    <?php $title_data = array(
+                                        name' => 'title',
+                                        id'=> 'title',
+                                        maxlength'   => '100',
+                                        size' => '60' ); ?>
+                            <?php echo form_input($title_data);?></p>
+                            
+                            <p><label for="caption">Copy:</label>
+                                    <?php $copy_data = array(
+                                        name' => 'copy',
+                                        id'=> 'copy',
+										value' => set_value('copy'),
+                                        rows'   => '8',
+                                        cols' => '80' ); ?>
+                            <?php echo form_textarea($copy_data);?></p>
+                            
+                      
+                       
+                         <p><?php echo form_submit('mysubmit', 'Save');?></p>
+            </div>
+            <?php echo form_close() ;?>
