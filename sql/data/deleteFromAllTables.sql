@@ -1,2 +1,0 @@
-DELETE FROM Greenways;
-DELETE FROM Events;
