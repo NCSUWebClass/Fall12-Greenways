@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry excluding="WSGreenways/src/mobile_wsGreenways/" kind="src" path=""/>
+	<buildpathentry kind="src" path="WSGreenways/src/mobile_wsGreenways"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+</buildpath>
