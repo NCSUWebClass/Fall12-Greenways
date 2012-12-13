@@ -52,7 +52,7 @@
 				  
 			<!-- This is the HOME page -->
 			<div data-role="content" data-theme="a" class="contentBox">
-				<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=211434024492203917841.0004b3778509f6e554593&amp;ie=UTF8&amp;t=m&amp;source=embed&amp;ll=36.114581,-80.261307&amp;spn=0.133128,0.219727&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=211434024492203917841.0004b3778509f6e554593&amp;ie=UTF8&amp;t=m&amp;source=embed&amp;ll=36.114581,-80.261307&amp;spn=0.133128,0.219727" style="color:#0000FF;text-align:left">Current WS Greenways</a> in a larger map</small>
+				<iframe style="display:block" width="290" height="275" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=211434024492203917841.0004b3778509f6e554593&amp;ie=UTF8&amp;t=m&amp;source=embed&amp;ll=36.114581,-80.261307&amp;spn=0.133128,0.219727&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=211434024492203917841.0004b3778509f6e554593&amp;ie=UTF8&amp;t=m&amp;source=embed&amp;ll=36.114581,-80.261307&amp;spn=0.133128,0.219727" style="color:#0000FF;text-align:left">Current WS Greenways</a> in a larger map</small>
 				<p><b style="color:#630">WS Greenways</b> is a citizen advocacy group working to get more people onto the ten greenways found throughout Winston-Salem.  Our goal is a city-wide network of trails connecting destinations for work, play, school, shopping and more.</p>
 				<p>This mobile site provides information about each greenway/trail and accessibility to it, as well as a Google map. Upcoming events on the greenways are also provided.</p>
 				<img src="images/about.jpg" width="285" height="83" alt="About">
@@ -199,6 +199,10 @@
 		printf("								<li>\n");
 		printf("									<a href=\"#greenways\">Back</a>\n");
 		printf("								</li>\n");
+		printf("						<img src=\"images/Bethabara 7.jpg\" width=\"285\" height=\"83\">");
+		printf("						<img src=\"images/Bowen Branch 1.jpg\" width=\"285\" height=\"83\">");
+		printf("						<img src=\"images/Brushy Fork 1.jpg\" width=\"285\" height=\"83\">");
+		printf("						<img src=\"images/Gateway 1.jpg\" width=\"285\" height=\"83\">");
 		printf("							</ul>\n");
 		printf("						</li>\n");
 	
@@ -347,7 +351,8 @@
 				</ul>
 			</nav>
 				<div data-role="content" data-theme="a" class="contentBox">
-					<h3>Join Our Discussion and Follow us on:</h3></br>
+					<h3>Join Our Discussion and Follow us on:</h3>
+					<br/>
 					<div id="forum" >
 					<ul data-theme="b" data-role="listview" class="greenLinks">
 					    
@@ -358,6 +363,9 @@
                               		</li>
                               		
                               		<li><a href="http://www.wsgreenways.org/index.php/emailAddressForm" id="email">Email</a>
+									</li>
+					</ul>
+		
 					</div>
 				</div><!--content-->
 			</div><!--page-->
@@ -396,292 +404,81 @@
 				
 			</nav>
 <div data-role="content" data-theme="a" class="contentBox">
-					<h3>Report an Issue:</h3>
+					<h3>Report Issues:</h3>
 					<br/>
-					<ul data-theme="b" data-role="listview" class="greenLinks">
-						<li>
-							Bethabara							
-							<ul>
-								<li>
-									Dead Animal
-								</li>
-								<li>
-									Electrical Essues
-								</li>
-								<li>
-									Fallen Tree
-								</li>
-								<li>
-									Restroom Issues
-								</li>
-								<li>
-									Suspecious Person
-								</li>
-								<li>
-									Suspecious Activities
-								
-								</li>
-								<li>
-									<a href="#issues">Back</a>
-								</li>
-							</ul>
-						</li>
-						
-						<li>
-							Bowen Branch
-							<ul>
-								<li>
-									Dead Animal
-								</li>
-								<li>
-									Electrical Essues
-								</li>
-								<li>
-									Fallen Tree
-								</li>
-								<li>
-									Restroom Issues
-								</li>
-								<li>
-									Suspecious Person
-								</li>
-								<li>
-									Suspecious Activities
-								
-								</li>
-								<li>
-									<a href="#issues">Back</a>
-								</li>
-							</ul>
-						</li>
-						
-						<li>
-							Gateway Commons
-							<ul>
-								<li>
-									Dead Animal
-								</li>
-								<li>
-									Electrical Essues
-								</li>
-								<li>
-									Fallen Tree
-								</li>
-								<li>
-									Restroom Issues
-								</li>
-								<li>
-									Suspecious Person
-								</li>
-								<li>
-									Suspecious Activities
-								
-								</li>
-								<li>
-									<a href="#issues">Back</a>
-								</li>
-							</ul>
-						</li>
-						
-						<li>
-							Muddy Creek
-							<ul>
-								<li>
-									Dead Animal
-								</li>
-								<li>
-									Electrical Essues
-								</li>
-								<li>
-									Fallen Tree
-								</li>
-								<li>
-									Restroom Issues
-								</li>
-								<li>
-									Suspecious Person
-								</li>
-								<li>
-									Suspecious Activities
-								
-								</li>
-								<li>
-									<a href="#issues">Back</a>
-								</li>
-							</ul>
-						</li>
-						
-						<li>
-							Newell-Massey
-							<ul>
-								<li>
-									Dead Animal
-								</li>
-								<li>
-									Electrical Essues
-								</li>
-								<li>
-									Fallen Tree
-								</li>
-								<li>
-									Restroom Issues
-								</li>
-								<li>
-									Suspecious Person
-								</li>
-								<li>
-									Suspecious Activities
-								
-								</li>
-								<li>
-									<a href="#issues">Back</a>
-								</li>
-							</ul>
-						</li>
-						
-						<li>
-							Peachtree
-							<ul>
-								<li>
-									Dead Animal
-								</li>
-								<li>
-									Electrical Essues
-								</li>
-								<li>
-									Fallen Tree
-								</li>
-								<li>
-									Restroom Issues
-								</li>
-								<li>
-									Suspecious Person
-								</li>
-								<li>
-									Suspecious Activities
-								
-								</li>
-								<li>
-									<a href="#issues">Back</a>
-								</li>
-							</ul>
-						</li>
-						
-						<li>
-							Salem Lake
-							<ul>
-								<li>
-									Dead Animal
-								</li>
-								<li>
-									Electrical Essues
-								</li>
-								<li>
-									Fallen Tree
-								</li>
-								<li>
-									Restroom Issues
-								</li>
-								<li>
-									Suspecious Person
-								</li>
-								<li>
-									Suspecious Activities
-								
-								</li>
-								<li>
-									<a href="#issues">Back</a>
-								</li>
-							</ul>
-						</li>
-						
-						<li>
-							Salem Creek
-							<ul>
-								<li>
-									Dead Animal
-								</li>
-								<li>
-									Electrical Essues
-								</li>
-								<li>
-									Fallen Tree
-								</li>
-								<li>
-									Restroom Issues
-								</li>
-								<li>
-									Suspecious Person
-								</li>
-								<li>
-									Suspecious Activities
-								
-								</li>
-								<li>
-									<a href="#issues">Back</a>
-								</li>
-							</ul>
-						</li>
-						
-						<li>
-							Silas Creek
-							<ul>
-								<li>
-									Dead Animal
-								</li>
-								<li>
-									Electrical Essues
-								</li>
-								<li>
-									Fallen Tree
-								</li>
-								<li>
-									Restroom Issues
-								</li>
-								<li>
-									Suspecious Person
-								</li>
-								<li>
-									Suspecious Activities
-								
-								</li>
-								<li>
-									<a href="#issues">Back</a>
-								</li>
-							</ul>
-						</li>
-						
-						<li>
-							Strollway
-							<ul>
-								<li>
-									Dead Animal
-								</li>
-								<li>
-									Electrical Essues
-								</li>
-								<li>
-									Fallen Tree
-								</li>
-								<li>
-									Restroom Issues
-								</li>
-								<li>
-									Suspecious Person
-								</li>
-								<li>
-									Suspecious Activities
-								
-								</li>
-								<li>
-									<a href="#issues">Back</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-						
+					  <form name="htmlform" method="post" action="html_form_send.php">
+					<table width="285px">
+					
+					<tr>
+					 <td valign="top">
+					  <label for="first_name">First Name *</label>
+					 </td>
+					 <td valign="top">
+					  <input  type="text" name="first_name" maxlength="50" size="30">
+					 </td>
+					</tr>
+
+					<tr>
+					 <td valign="top">
+					  <label for="last_name">Last Name</label>
+					 </td>
+					 <td valign="top">
+					  <input  type="text" name="last_name" maxlength="50" size="30">
+					 </td>
+					</tr>
+					
+					<tr>
+					 <td valign="top">
+					  <label for="email">Email Address</label>
+					 </td>
+					 <td valign="top">
+					  <input  type="text" name="email" maxlength="80" size="30">
+					 </td>
+					</tr>
+					
+					<tr>
+					 <td valign="top">
+					  <label for="telephone">Telephone Number</label>
+					 </td>
+					 <td valign="top">
+					  <input  type="text" name="telephone" maxlength="30" size="30">
+					 </td>
+					</tr>
+					
+					<tr>
+					 <td valign="top">
+					  <label for="location">Location *</label>
+					 </td>
+					 <td valign="top">
+					  <textarea  name="comments" maxlength="200" cols="25" rows="6"></textarea>
+					 </td>
+					</tr>
+					
+					<tr>
+					 <td valign="top">
+					  <label for="comments">Comments *</label>
+					 </td>
+					 <td valign="top">
+					  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+					 </td>
+					</tr>
+					
+					<tr>
+					 <td colspan="2" style="text-align:center">
+
+					  <input type="submit" value="Submit">
+					 </td>
+					</tr>
+					</table>
+					</form>
 						
 				</div>
+				
+				<ul data-theme="b" data-role="listview" class="greenLinks">
+					<li>
+						<a href='#home'>Back</a>
+					</li>
+				</ul>
 				
 			<div data-role="content" data-theme="a" class="contentBox">
 					<div id="upcomingEvents" >
@@ -723,8 +520,8 @@
 						<a href="#weather">WEATHER</a>
 					</li>
 				</ul>
-			</nav>
-			<div data-role="content" data-theme="a" class="contentBox" style="width:425px; border:2px solid green;">
+				</nav>
+			<div data-role="content" data-theme="a" class="contentBox" style="width:285px; border:2px solid green;">
 		    <?php
 				$doc = new DOMDocument();
 				$doc->load("http://weather.yahooapis.com/forecastrss?w=2522292&u=f");
@@ -741,5 +538,6 @@
 					}
 				}
 			?> </div>
+						</div>
 	</body>
 </html>
